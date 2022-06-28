@@ -1,14 +1,14 @@
 const express = require("express");
 const cors = require("cors");
 
-const { APP_PORT } = require("./config");
+const { APP_PORT, CLIENT_URL } = require("./config");
 const router = require("./routes/index");
 
 const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: CLIENT_URL,
     preflightContinue: true,
     optionsSuccessStatus: 200,
     credentials: true,

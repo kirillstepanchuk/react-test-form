@@ -1,10 +1,11 @@
 import axios from "axios";
 
+import { SERVICE_URL } from "../constants";
 import { FeedbackData } from "../types/feedback";
 
 export const addFeedback = async (data: FeedbackData): Promise<string> => {
   const result = await axios({
-    url: "http://localhost:3000/feedback/add",
+    url: `${SERVICE_URL}/feedback/add`,
     method: "POST",
     data: {
       data,

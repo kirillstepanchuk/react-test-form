@@ -11,7 +11,7 @@ export interface FeedbackState {
 export const initialState: FeedbackState = {
   data: null,
   error: "",
-  loading: true,
+  loading: false,
 };
 
 const feedback = (

@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    315deg,
+    rgb(195, 154, 207),
+    rgb(141, 82, 182),
+    rgb(229, 78, 78)
+  );
+  background-size: cover;
+  background-position: center;
+}
